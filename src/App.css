@@ -1,38 +1,76 @@
-.App {
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+.main-bg {
+  min-height: 100vh;
+  background: url("./assets/hacker.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glass card */
+.glass-card {
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.7) !important;
+  color: white !important;
+  box-shadow: 0 0 30px rgba(0,255,255,0.2);
+}
+
+/* Icon */
+.icon {
+  font-size: 60px !important;
+  color: #00e5ff;
+}
+
+/* Titles */
+.title {
+  font-weight: bold !important;
+}
+
+.subtitle {
+  color: #ccc;
+}
+
+/* Input */
+.input input {
+  color: white !important;
+}
+
+/* Button */
+.scan-btn {
+  margin-top: 15px !important;
+  background: linear-gradient(90deg,#00e5ff,#00bcd4) !important;
+}
+
+/* Loading */
+.loading-box {
+  margin-top: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Result */
+.result-box {
+  margin-top: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.result-text {
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Progress */
+.progress {
+  height: 10px !important;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Reasons */
+.reason-box {
+  margin-top: 15px;
+  color: #ffccbc;
 }
